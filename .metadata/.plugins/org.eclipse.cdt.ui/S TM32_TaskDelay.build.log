@@ -1,0 +1,89 @@
+12:51:19 **** Build of configuration Debug for project S TM32_TaskDelay ****
+make -j12 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.c
+Building file: ../src/system_stm32f4xx.c
+Building file: ../Third-Party/SEGGER/SEGGER/SEGGER_RTT.c
+Building file: ../Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Building file: ../Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+I:\S TM32_TaskDelay\Debug
+I:\S TM32_TaskDelay\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Building file: ../Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c
+I:\S TM32_TaskDelay\Debug
+I:\S TM32_TaskDelay\Debug
+I:\S TM32_TaskDelay\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/SEGGER/SEGGER/SEGGER_RTT.d" -MT"Third-Party/SEGGER/SEGGER/SEGGER_RTT.o" -o "Third-Party/SEGGER/SEGGER/SEGGER_RTT.o" "../Third-Party/SEGGER/SEGGER/SEGGER_RTT.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.d" -MT"Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o" -o "Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o" "../Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.c"
+I:\S TM32_TaskDelay\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.d" -MT"Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o" -o "Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o" "../Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.c"
+Building file: ../Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.c
+Building file: ../Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.c
+Building file: ../Third-Party/FreeRTOS/org/Source/croutine.c
+I:\S TM32_TaskDelay\Debug
+Building file: ../Third-Party/FreeRTOS/org/Source/event_groups.c
+Building file: ../Third-Party/FreeRTOS/org/Source/list.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.d" -MT"Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o" -o "Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o" "../Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+Invoking: MCU GCC Compiler
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+Invoking: MCU GCC Compiler
+make: *** Waiting for unfinished jobs....
+I:\S TM32_TaskDelay\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.d" -MT"Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o" -o "Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o" "../Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.c"
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+src/subdir.mk:21: recipe for target 'src/system_stm32f4xx.o' failed
+make: *** [src/system_stm32f4xx.o] Error 1
+I:\S TM32_TaskDelay\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.d" -MT"Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o" -o "Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o" "../Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.c"
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+I:\S TM32_TaskDelay\Debug
+Third-Party/SEGGER/OS/subdir.mk:18: recipe for target 'Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o' failed
+make: *** [Third-Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o] Error 1
+I:\S TM32_TaskDelay\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/FreeRTOS/org/Source/croutine.d" -MT"Third-Party/FreeRTOS/org/Source/croutine.o" -o "Third-Party/FreeRTOS/org/Source/croutine.o" "../Third-Party/FreeRTOS/org/Source/croutine.c"
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+I:\S TM32_TaskDelay\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/FreeRTOS/org/Source/list.d" -MT"Third-Party/FreeRTOS/org/Source/list.o" -o "Third-Party/FreeRTOS/org/Source/list.o" "../Third-Party/FreeRTOS/org/Source/list.c"
+Third-Party/SEGGER/SEGGER/subdir.mk:21: recipe for target 'Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o' failed
+make: *** [Third-Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o] Error 1
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/Config" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/OS" -I"I:/S TM32_TaskDelay/StdPeriph_Driver/inc" -I"I:/S TM32_TaskDelay/Third-Party/SEGGER/SEGGER" -I"I:/S TM32_TaskDelay/Config" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F" -I"I:/S TM32_TaskDelay/Third-Party/FreeRTOS/org/Source/include" -I"I:/S TM32_TaskDelay/inc" -I"I:/S TM32_TaskDelay/CMSIS/device" -I"I:/S TM32_TaskDelay/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Third-Party/FreeRTOS/org/Source/event_groups.d" -MT"Third-Party/FreeRTOS/org/Source/event_groups.o" -o "Third-Party/FreeRTOS/org/Source/event_groups.o" "../Third-Party/FreeRTOS/org/Source/event_groups.c"
+Finished building: ../startup/startup_stm32.s
+Third-Party/SEGGER/SEGGER/subdir.mk:21: recipe for target 'Third-Party/SEGGER/SEGGER/SEGGER_RTT.o' failed
+make: *** [Third-Party/SEGGER/SEGGER/SEGGER_RTT.o] Error 1
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+ 
+make: *** [Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o] Error 1
+Third-Party/SEGGER/Config/subdir.mk:18: recipe for target 'Third-Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o' failed
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+Third-Party/FreeRTOS/org/Source/portable/MemMang/subdir.mk:18: recipe for target 'Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o' failed
+make: *** [Third-Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o] Error 1
+make: *** [Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o] Error 1
+Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/subdir.mk:18: recipe for target 'Third-Party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o' failed
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+Third-Party/FreeRTOS/org/Source/subdir.mk:36: recipe for target 'Third-Party/FreeRTOS/org/Source/croutine.o' failed
+make: *** [Third-Party/FreeRTOS/org/Source/croutine.o] Error 1
+make: *** [Third-Party/FreeRTOS/org/Source/list.o] Error 1
+Third-Party/FreeRTOS/org/Source/subdir.mk:36: recipe for target 'Third-Party/FreeRTOS/org/Source/list.o' failed
+make: *** [Third-Party/FreeRTOS/org/Source/event_groups.o] Error 1
+Third-Party/FreeRTOS/org/Source/subdir.mk:36: recipe for target 'Third-Party/FreeRTOS/org/Source/event_groups.o' failed
+
+12:51:19 Build Finished (took 502ms)
+

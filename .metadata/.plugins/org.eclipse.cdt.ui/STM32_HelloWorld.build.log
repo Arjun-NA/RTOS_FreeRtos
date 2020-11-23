@@ -1,0 +1,89 @@
+19:16:57 **** Build of configuration Debug for project STM32_HelloWorld ****
+make -j12 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../src/main.c
+Building file: ../src/syscalls.c
+Building file: ../src/system_stm32f4xx.c
+Building file: ../StdPeriph_Driver/src/misc.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_adc.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+Building file: ../StdPeriph_Driver/src/stm32f4xx_can.c
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f4xx.d" -MT"src/system_stm32f4xx.o" -o "src/system_stm32f4xx.o" "../src/system_stm32f4xx.c"
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/misc.d" -MT"StdPeriph_Driver/src/misc.o" -o "StdPeriph_Driver/src/misc.o" "../StdPeriph_Driver/src/misc.c"
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_adc.d" -MT"StdPeriph_Driver/src/stm32f4xx_adc.o" -o "StdPeriph_Driver/src/stm32f4xx_adc.o" "../StdPeriph_Driver/src/stm32f4xx_adc.c"
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+Building file: ../StdPeriph_Driver/src/stm32f4xx_cec.c
+Building file: ../StdPeriph_Driver/src/stm32f4xx_crc.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_can.d" -MT"StdPeriph_Driver/src/stm32f4xx_can.o" -o "StdPeriph_Driver/src/stm32f4xx_can.o" "../StdPeriph_Driver/src/stm32f4xx_can.c"
+Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp.c
+Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f4xx_cryp_des.c
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+src/subdir.mk:24: recipe for target 'src/system_stm32f4xx.o' failed
+make: *** [src/system_stm32f4xx.o] Error 1
+make: *** Waiting for unfinished jobs....
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp.o" "../StdPeriph_Driver/src/stm32f4xx_cryp.c"
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+src/subdir.mk:24: recipe for target 'src/syscalls.o' failed
+make: *** [src/syscalls.o] Error 1
+make: *** [src/main.o] Error 1
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_crc.d" -MT"StdPeriph_Driver/src/stm32f4xx_crc.o" -o "StdPeriph_Driver/src/stm32f4xx_crc.o" "../StdPeriph_Driver/src/stm32f4xx_crc.c"
+Finished building: ../startup/startup_stm32.s
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/misc.o' failed
+make: *** [StdPeriph_Driver/src/misc.o] Error 1
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cec.d" -MT"StdPeriph_Driver/src/stm32f4xx_cec.o" -o "StdPeriph_Driver/src/stm32f4xx_cec.o" "../StdPeriph_Driver/src/stm32f4xx_cec.c"
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_aes.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_aes.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_aes.c"
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_adc.o' failed
+make: *** [StdPeriph_Driver/src/stm32f4xx_adc.o] Error 1
+E:\STM32nucleo\RTOS_Workspace\STM32_HelloWorld\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DUSE_STDPERIPH_DRIVER -DSTM32F4 -DSTM32F446RETx -DSTM32F446xx -DNUCLEO_F446RE -DDEBUG -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/StdPeriph_Driver/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/inc" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/core" -I"E:/STM32nucleo/RTOS_Workspace/STM32_HelloWorld/CMSIS/device" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f4xx_cryp_des.d" -MT"StdPeriph_Driver/src/stm32f4xx_cryp_des.o" -o "StdPeriph_Driver/src/stm32f4xx_cryp_des.o" "../StdPeriph_Driver/src/stm32f4xx_cryp_des.c"
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_can.o' failed
+make: *** [StdPeriph_Driver/src/stm32f4xx_can.o] Error 1
+ 
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_cryp.o' failed
+make: *** [StdPeriph_Driver/src/stm32f4xx_cryp.o] Error 1
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_crc.o' failed
+make: *** [StdPeriph_Driver/src/stm32f4xx_crc.o] Error 1
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+make: *** [StdPeriph_Driver/src/stm32f4xx_cec.o] Error 1
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_cec.o' failed
+make: *** [StdPeriph_Driver/src/stm32f4xx_cryp_aes.o] Error 1
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_cryp_aes.o' failed
+arm-none-eabi-gcc: error: CreateProcess: No such file or directory
+StdPeriph_Driver/src/subdir.mk:144: recipe for target 'StdPeriph_Driver/src/stm32f4xx_cryp_des.o' failed
+make: *** [StdPeriph_Driver/src/stm32f4xx_cryp_des.o] Error 1
+
+19:16:58 Build Finished (took 450ms)
+

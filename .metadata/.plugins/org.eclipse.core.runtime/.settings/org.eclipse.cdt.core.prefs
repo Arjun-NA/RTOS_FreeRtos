@@ -1,0 +1,12 @@
+build.all.configs.enabled=false
+build.proj.ref.configs.enabled=false
+eclipse.preferences.version=1
+environment/workspace/LANG/delimiter=;
+environment/workspace/LANG/operation=replace
+environment/workspace/LANG/value=
+environment/workspace/LC_ALL/delimiter=;
+environment/workspace/LC_ALL/operation=replace
+environment/workspace/LC_ALL/value=en_GB.UTF-8
+environment/workspace/append=true
+environment/workspace/appendContributed=true
+macros/workspace=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<macros/>\r\n

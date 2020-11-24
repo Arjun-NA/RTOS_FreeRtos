@@ -64,12 +64,12 @@ Mastering Free RTOS using STM32F446RE
 * File not found: 
 	1.		See if includes are proper, whether any folders are exculded from build.
 	2.		check if your environmental variable PATH is having Arm gcc compiler path
-			*How to?* : open cmd; type ```arm-none-eabi-gcc``` ; It should say no imput file; 
+			*How to?* : open cmd; type "arm-none-eabi-gcc" ; It should say no imput file; 
 			Not 'command not found'  
 	3.		Check if any files show error when you open in editor, if so resolve.
 	4. 		One Interesting error i faced: #include <stdio.h> not recognised 
 			Solution: Either reinstall the compiler OR
-			What I did: cmd type:```where arm-none-eabi-gcc``` ; 
+			What I did: cmd type:"where arm-none-eabi-gcc"; 
 			Go to location-> one folder backwards -> look for arm-none-eabi/include -> see if 
 			stdio.h is there. (It should be else reinstall.) Add this path to the environment 
 			variable PATH; (Sometimes only this works) Alternatively edit:

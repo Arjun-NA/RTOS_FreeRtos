@@ -10,6 +10,9 @@ RM := rm -rf
 -include sources.mk
 -include startup/subdir.mk
 -include src/subdir.mk
+-include Third_party/FreeRTOS/org/Source/portable/MemMang/subdir.mk
+-include Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/subdir.mk
+-include Third_party/FreeRTOS/org/Source/subdir.mk
 -include StdPeriph_Driver/src/subdir.mk
 -include subdir.mk
 -include objects.mk

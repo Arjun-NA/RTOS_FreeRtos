@@ -1,7 +1,23 @@
 # RTOS_FreeRtos
-Learning Free RTOS using STM32F446RE
+Mastering Free RTOS using STM32F446RE
 
+### Prerequisites
+- Familiarity with STM32 IDEs
+- Open minded to read and do installations on your own
+- 
 
+## 1. Gathering Files and Softwares 
+
+- Download [FreeRTOS](https://www.freertos.org/)
+- Download [STM Workbench](https://www.openstm32.org/HomePage)
+- Download [Standard Peripheral Files](./StdPeri_files) { Included in the repository}
+
+## 2. Create a New project in Workbench
+
+i. 		Create a WorkSpace and select the workspace as the stm32 workbench loads.
+ii.		Create a New project as per the following img
+		![New Project](./readme_imgs/New_prjt.PNG) 
+iii.	
 
 ---
 ### Miscellaneous

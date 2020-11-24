@@ -16,6 +16,9 @@ C_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 StdPeriph_Driver/src \
+Third_party/FreeRTOS/org/Source \
+Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F \
+Third_party/FreeRTOS/org/Source/portable/MemMang \
 src \
 startup \
 

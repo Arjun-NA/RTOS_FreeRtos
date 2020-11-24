@@ -23,7 +23,7 @@ C_DEPS += \
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\inc" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\CMSIS\core" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\CMSIS\device" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\StdPeriph_Driver\inc" -O0 -g1 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\inc" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\Config" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\Third_party\FreeRTOS\org\Source\portable\GCC\ARM_CM4F" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\Third_party\FreeRTOS\org\Source\include" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\CMSIS\core" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\CMSIS\device" -I"E:\STM32nucleo\RTOS_Workspace\HelloWorld\StdPeriph_Driver\inc" -O0 -g1 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

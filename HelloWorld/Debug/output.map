@@ -8,6 +8,8 @@ f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../
                               f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-exit.o) (_global_impure_ptr)
 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
                               f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (__libc_init_array)
+f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+                              ./Third_party/FreeRTOS/org/Source/queue.o (memcpy)
 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
                               f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o (memset)
 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
@@ -28,6 +30,7 @@ __lock___atexit_recursive_mutex
                     0x1               f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
 __lock___arc4random_mutex
                     0x1               f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+xQueueRegistry      0x40              ./Third_party/FreeRTOS/org/Source/queue.o
 __lock___env_recursive_mutex
                     0x1               f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
 __lock___sinit_recursive_mutex
@@ -100,6 +103,443 @@ Discarded input sections
  .bss           0x00000000        0x0 ./src/system_stm32f4xx.o
  .text.SystemCoreClockUpdate
                 0x00000000      0x19c ./src/system_stm32f4xx.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .bss           0x00000000    0x12c20 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .rodata        0x00000000        0x4 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.pvPortMalloc
+                0x00000000      0x1a0 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.vPortFree
+                0x00000000       0xc4 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.xPortGetFreeHeapSize
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.xPortGetMinimumEverFreeHeapSize
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0xe ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.prvHeapInit
+                0x00000000       0xc4 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.prvInsertBlockIntoFreeList
+                0x00000000       0xb4 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text.vPortGetHeapStats
+                0x00000000       0xbc ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_info    0x00000000      0x12c ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_abbrev  0x00000000       0xc8 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_aranges
+                0x00000000       0x58 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_ranges  0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_line    0x00000000      0x3f4 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_str     0x00000000      0x1a5 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .comment       0x00000000       0x4d ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .debug_frame   0x00000000      0x12c ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .ARM.attributes
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .data          0x00000000        0x4 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .bss           0x00000000        0x8 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .rodata        0x00000000        0x4 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.pxPortInitialiseStack
+                0x00000000       0x68 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.prvTaskExitError
+                0x00000000       0x58 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.prvPortStartFirstTask
+                0x00000000       0x2c ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.xPortStartScheduler
+                0x00000000      0x144 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.vPortEndScheduler
+                0x00000000       0x38 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.vPortEnterCritical
+                0x00000000       0x60 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.vPortExitCritical
+                0x00000000       0x54 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.vPortSetupTimerInterrupt
+                0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.vPortEnableVFP
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text.vPortValidateInterruptPriority
+                0x00000000       0x80 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/croutine.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/croutine.o
+ .bss           0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/croutine.o
+ .debug_line    0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/croutine.o
+ .debug_str     0x00000000       0xe9 ./Third_party/FreeRTOS/org/Source/croutine.o
+ .comment       0x00000000       0x4d ./Third_party/FreeRTOS/org/Source/croutine.o
+ .ARM.attributes
+                0x00000000       0x37 ./Third_party/FreeRTOS/org/Source/croutine.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .bss           0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.xEventGroupCreate
+                0x00000000       0x2e ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.xEventGroupSync
+                0x00000000      0x15c ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.xEventGroupWaitBits
+                0x00000000      0x19c ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.xEventGroupClearBits
+                0x00000000       0x70 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.xEventGroupGetBitsFromISR
+                0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.xEventGroupSetBits
+                0x00000000      0x116 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.vEventGroupDelete
+                0x00000000       0x62 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.vEventGroupSetBitsCallback
+                0x00000000       0x1a ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.vEventGroupClearBitsCallback
+                0x00000000       0x1a ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.prvTestWaitCondition
+                0x00000000       0x44 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.uxEventGroupGetNumber
+                0x00000000       0x2c ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text.vEventGroupSetNumber
+                0x00000000       0x1c ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_info    0x00000000      0x22c ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_abbrev  0x00000000       0xf1 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_aranges
+                0x00000000       0x78 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_ranges  0x00000000       0x68 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_line    0x00000000      0x504 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_str     0x00000000      0x224 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .comment       0x00000000       0x4d ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .debug_frame   0x00000000      0x1d0 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .ARM.attributes
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/event_groups.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/list.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/list.o
+ .bss           0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/list.o
+ .text.vListInitialise
+                0x00000000       0x40 ./Third_party/FreeRTOS/org/Source/list.o
+ .text.vListInitialiseItem
+                0x00000000       0x1a ./Third_party/FreeRTOS/org/Source/list.o
+ .text.vListInsert
+                0x00000000       0x72 ./Third_party/FreeRTOS/org/Source/list.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/queue.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/queue.o
+ .bss           0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueGenericReset
+                0x00000000       0xd0 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueGenericCreate
+                0x00000000       0xa0 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvInitialiseNewQueue
+                0x00000000       0x46 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvInitialiseMutex
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueCreateMutex
+                0x00000000       0x30 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueGiveMutexRecursive
+                0x00000000       0x68 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueTakeMutexRecursive
+                0x00000000       0x6c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueCreateCountingSemaphore
+                0x00000000       0x66 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueGenericSend
+                0x00000000      0x1fc ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueGenericSendFromISR
+                0x00000000      0x154 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueGiveFromISR
+                0x00000000      0x138 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueReceive
+                0x00000000      0x1c0 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueSemaphoreTake
+                0x00000000      0x218 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueuePeek
+                0x00000000      0x1c4 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000      0x11e ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueuePeekFromISR
+                0x00000000       0xd2 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x3c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x46 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000       0x3c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.vQueueDelete
+                0x00000000       0x3c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.uxQueueGetQueueNumber
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.vQueueSetQueueNumber
+                0x00000000       0x1c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.ucQueueGetQueueType
+                0x00000000       0x1a ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvGetDisinheritPriorityAfterTimeout
+                0x00000000       0x30 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvCopyDataToQueue
+                0x00000000       0xd4 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvCopyDataFromQueue
+                0x00000000       0x4c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvUnlockQueue
+                0x00000000       0xa4 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvIsQueueEmpty
+                0x00000000       0x2c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.prvIsQueueFull
+                0x00000000       0x30 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000       0x4c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.vQueueAddToRegistry
+                0x00000000       0x54 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.pcQueueGetName
+                0x00000000       0x4c ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.vQueueUnregisterQueue
+                0x00000000       0x54 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text.vQueueWaitForMessageRestricted
+                0x00000000       0x68 ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_info    0x00000000      0x67a ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_abbrev  0x00000000       0xc4 ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_aranges
+                0x00000000      0x130 ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_ranges  0x00000000      0x120 ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_line    0x00000000     0x101f ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_str     0x00000000      0x3fc ./Third_party/FreeRTOS/org/Source/queue.o
+ .comment       0x00000000       0x4d ./Third_party/FreeRTOS/org/Source/queue.o
+ .debug_frame   0x00000000      0x534 ./Third_party/FreeRTOS/org/Source/queue.o
+ .ARM.attributes
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/queue.o
+ COMMON         0x00000000       0x40 ./Third_party/FreeRTOS/org/Source/queue.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .bss           0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferGenericCreate
+                0x00000000       0xb6 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.vStreamBufferDelete
+                0x00000000       0x4e ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferReset
+                0x00000000       0x78 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferSetTriggerLevel
+                0x00000000       0x5c ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferSpacesAvailable
+                0x00000000       0x66 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferBytesAvailable
+                0x00000000       0x3a ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferSend
+                0x00000000      0x1aa ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferSendFromISR
+                0x00000000       0xe6 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.prvWriteMessageToBuffer
+                0x00000000       0x7a ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferReceive
+                0x00000000      0x134 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferNextMessageLengthBytes
+                0x00000000       0x92 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferReceiveFromISR
+                0x00000000       0xe2 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.prvReadMessageFromBuffer
+                0x00000000       0x64 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferIsEmpty
+                0x00000000       0x50 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferIsFull
+                0x00000000       0x60 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferSendCompletedFromISR
+                0x00000000       0x8a ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.xStreamBufferReceiveCompletedFromISR
+                0x00000000       0x8a ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.prvWriteBytesToBuffer
+                0x00000000       0xe4 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.prvReadBytesFromBuffer
+                0x00000000       0xf4 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.prvBytesInBuffer
+                0x00000000       0x40 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.prvInitialiseNewStreamBuffer
+                0x00000000       0x66 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.uxStreamBufferGetStreamBufferNumber
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.vStreamBufferSetStreamBufferNumber
+                0x00000000       0x1c ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text.ucStreamBufferGetStreamBufferType
+                0x00000000       0x1e ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_info    0x00000000      0x507 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_abbrev  0x00000000       0xef ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_aranges
+                0x00000000       0xd8 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_ranges  0x00000000       0xc8 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_line    0x00000000      0x9be ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_str     0x00000000      0x3a0 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .comment       0x00000000       0x4d ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .debug_frame   0x00000000      0x3a8 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .ARM.attributes
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskCreate
+                0x00000000       0x82 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvInitialiseNewTask
+                0x00000000      0x12c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvAddNewTaskToReadyList
+                0x00000000       0xdc ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskDelete
+                0x00000000      0x120 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskDelayUntil
+                0x00000000       0xfc ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskDelay
+                0x00000000       0x68 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.eTaskGetState
+                0x00000000       0xf4 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.uxTaskPriorityGet
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.uxTaskPriorityGetFromISR
+                0x00000000       0x58 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskPrioritySet
+                0x00000000      0x154 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskSuspend
+                0x00000000      0x140 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvTaskIsTaskSuspended
+                0x00000000       0x64 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskResume
+                0x00000000       0xbc ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000       0xe4 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .rodata        0x00000000        0x5 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskStartScheduler
+                0x00000000       0x9c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000       0x30 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskSuspendAll
+                0x00000000       0x1c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskResumeAll
+                0x00000000      0x138 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGetTickCount
+                0x00000000       0x20 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000       0x24 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.uxTaskGetNumberOfTasks
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.pcTaskGetName
+                0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.uxTaskGetSystemState
+                0x00000000      0x11c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskCatchUpTicks
+                0x00000000       0x50 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskPlaceOnEventList
+                0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0x78 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskPlaceOnEventListRestricted
+                0x00000000       0x58 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskRemoveFromEventList
+                0x00000000       0xc4 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskRemoveFromUnorderedEventList
+                0x00000000       0xc4 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskSetTimeOutState
+                0x00000000       0x4c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskInternalSetTimeOutState
+                0x00000000       0x2c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskCheckForTimeOut
+                0x00000000       0xcc ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskMissedYield
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.uxTaskGetTaskNumber
+                0x00000000       0x2c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskSetTaskNumber
+                0x00000000       0x26 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvIdleTask
+                0x00000000       0x30 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvInitialiseTaskLists
+                0x00000000       0x80 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00000000       0x5c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskGetInfo
+                0x00000000       0xcc ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvListTasksWithinSingleList
+                0x00000000       0xa4 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvTaskCheckFreeStackSpace
+                0x00000000       0x38 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvDeleteTCB
+                0x00000000       0x20 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00000000       0x20 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGetSchedulerState
+                0x00000000       0x3c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskPriorityInherit
+                0x00000000       0xec ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskPriorityDisinherit
+                0x00000000       0xf4 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskPriorityDisinheritAfterTimeout
+                0x00000000      0x11c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x30 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.pvTaskIncrementMutexHeldCount
+                0x00000000       0x28 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.ulTaskGenericNotifyTake
+                0x00000000       0xd0 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGenericNotifyWait
+                0x00000000      0x100 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGenericNotify
+                0x00000000      0x1c0 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x00000000      0x204 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.vTaskGenericNotifyGiveFromISR
+                0x00000000      0x158 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.xTaskGenericNotifyStateClear
+                0x00000000       0x74 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.ulTaskGenericNotifyValueClear
+                0x00000000       0x5c ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text.prvAddCurrentTaskToDelayedList
+                0x00000000       0xcc ./Third_party/FreeRTOS/org/Source/tasks.o
+ .text          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/timers.o
+ .data          0x00000000        0x0 ./Third_party/FreeRTOS/org/Source/timers.o
+ .bss           0x00000000       0x3c ./Third_party/FreeRTOS/org/Source/timers.o
+ .rodata        0x00000000        0xd ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerCreateTimerTask
+                0x00000000       0x64 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerCreate
+                0x00000000       0x42 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvInitialiseNewTimer
+                0x00000000       0x76 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerGenericCommand
+                0x00000000       0x9c ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerGetTimerDaemonTaskHandle
+                0x00000000       0x38 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerGetPeriod
+                0x00000000       0x38 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.vTimerSetReloadMode
+                0x00000000       0x66 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.uxTimerGetReloadMode
+                0x00000000       0x52 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerGetExpiryTime
+                0x00000000       0x3c ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.pcTimerGetName
+                0x00000000       0x38 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvProcessExpiredTimer
+                0x00000000       0x98 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvTimerTask
+                0x00000000       0x24 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvProcessTimerOrBlockTask
+                0x00000000       0x9c ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvGetNextExpireTime
+                0x00000000       0x48 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvSampleTimeNow
+                0x00000000       0x40 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvInsertTimerInActiveList
+                0x00000000       0x84 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvProcessReceivedCommands
+                0x00000000      0x18c ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvSwitchTimerLists
+                0x00000000       0xc8 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.prvCheckForValidListAndQueue
+                0x00000000       0x6c ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.xTimerIsTimerActive
+                0x00000000       0x52 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.pvTimerGetTimerID
+                0x00000000       0x40 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.vTimerSetTimerID
+                0x00000000       0x40 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.uxTimerGetTimerNumber
+                0x00000000       0x18 ./Third_party/FreeRTOS/org/Source/timers.o
+ .text.vTimerSetTimerNumber
+                0x00000000       0x1c ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_info    0x00000000      0x351 ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_abbrev  0x00000000       0xf6 ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_aranges
+                0x00000000       0xd8 ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_ranges  0x00000000       0xc8 ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_line    0x00000000      0x70e ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_str     0x00000000      0x2f0 ./Third_party/FreeRTOS/org/Source/timers.o
+ .comment       0x00000000       0x4d ./Third_party/FreeRTOS/org/Source/timers.o
+ .debug_frame   0x00000000      0x38c ./Third_party/FreeRTOS/org/Source/timers.o
+ .ARM.attributes
+                0x00000000       0x34 ./Third_party/FreeRTOS/org/Source/timers.o
  .text          0x00000000        0x0 ./StdPeriph_Driver/src/misc.o
  .data          0x00000000        0x0 ./StdPeriph_Driver/src/misc.o
  .bss           0x00000000        0x0 ./StdPeriph_Driver/src/misc.o
@@ -2250,6 +2690,11 @@ Discarded input sections
  .text          0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
  .data          0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
  .bss           0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .text          0x00000000      0x134 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x00000000       0x1c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memcpy.o)
  .text          0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
  .data          0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
  .bss           0x00000000        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-memset.o)
@@ -2317,6 +2762,15 @@ LOAD ./startup/startup_stm32.o
 LOAD ./src/main.o
 LOAD ./src/syscalls.o
 LOAD ./src/system_stm32f4xx.o
+LOAD ./Third_party/FreeRTOS/org/Source/portable/MemMang/heap_4.o
+LOAD ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+LOAD ./Third_party/FreeRTOS/org/Source/croutine.o
+LOAD ./Third_party/FreeRTOS/org/Source/event_groups.o
+LOAD ./Third_party/FreeRTOS/org/Source/list.o
+LOAD ./Third_party/FreeRTOS/org/Source/queue.o
+LOAD ./Third_party/FreeRTOS/org/Source/stream_buffer.o
+LOAD ./Third_party/FreeRTOS/org/Source/tasks.o
+LOAD ./Third_party/FreeRTOS/org/Source/timers.o
 LOAD ./StdPeriph_Driver/src/misc.o
 LOAD ./StdPeriph_Driver/src/stm32f4xx_adc.o
 LOAD ./StdPeriph_Driver/src/stm32f4xx_can.o
@@ -2377,217 +2831,238 @@ LOAD f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.
                 0x08000000                g_pfnVectors
                 0x080001c4                . = ALIGN (0x4)
 
-.text           0x080001c4      0x370
-                0x080001c4                . = ALIGN (0x4)
+.text           0x080001d0      0x748
+                0x080001d0                . = ALIGN (0x4)
  *(.text)
- .text          0x080001c4       0x40 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .text          0x080001d0       0x40 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.text*)
  .text.Reset_Handler
-                0x08000204       0x50 ./startup/startup_stm32.o
-                0x08000204                Reset_Handler
+                0x08000210       0x50 ./startup/startup_stm32.o
+                0x08000210                Reset_Handler
  .text.Default_Handler
-                0x08000254        0x2 ./startup/startup_stm32.o
-                0x08000254                RTC_Alarm_IRQHandler
-                0x08000254                EXTI2_IRQHandler
-                0x08000254                TIM8_CC_IRQHandler
-                0x08000254                SPDIF_Rx_IRQHandler
-                0x08000254                DebugMon_Handler
-                0x08000254                SPI4_IRQHandler
-                0x08000254                TIM1_CC_IRQHandler
-                0x08000254                QuadSPI_IRQHandler
-                0x08000254                DMA2_Stream5_IRQHandler
-                0x08000254                HardFault_Handler
-                0x08000254                DMA1_Stream5_IRQHandler
-                0x08000254                SysTick_Handler
-                0x08000254                PVD_IRQHandler
-                0x08000254                SDIO_IRQHandler
-                0x08000254                TAMP_STAMP_IRQHandler
-                0x08000254                PendSV_Handler
-                0x08000254                NMI_Handler
-                0x08000254                CAN2_RX1_IRQHandler
-                0x08000254                EXTI3_IRQHandler
-                0x08000254                TIM8_TRG_COM_TIM14_IRQHandler
-                0x08000254                TIM1_UP_TIM10_IRQHandler
-                0x08000254                FMPI2C1_error_IRQHandler
-                0x08000254                TIM8_UP_TIM13_IRQHandler
-                0x08000254                I2C3_ER_IRQHandler
-                0x08000254                EXTI0_IRQHandler
-                0x08000254                I2C2_EV_IRQHandler
-                0x08000254                DMA1_Stream2_IRQHandler
-                0x08000254                CAN1_RX0_IRQHandler
-                0x08000254                FPU_IRQHandler
-                0x08000254                OTG_HS_WKUP_IRQHandler
-                0x08000254                UsageFault_Handler
-                0x08000254                CAN2_SCE_IRQHandler
-                0x08000254                DMA2_Stream2_IRQHandler
-                0x08000254                SPI1_IRQHandler
-                0x08000254                TIM6_DAC_IRQHandler
-                0x08000254                TIM1_BRK_TIM9_IRQHandler
-                0x08000254                DCMI_IRQHandler
-                0x08000254                CAN2_RX0_IRQHandler
-                0x08000254                DMA2_Stream3_IRQHandler
-                0x08000254                FMPI2C1_IRQHandler
-                0x08000254                SAI2_IRQHandler
-                0x08000254                USART6_IRQHandler
-                0x08000254                USART3_IRQHandler
-                0x08000254                CAN1_RX1_IRQHandler
-                0x08000254                UART5_IRQHandler
-                0x08000254                DMA2_Stream0_IRQHandler
-                0x08000254                TIM4_IRQHandler
-                0x08000254                I2C1_EV_IRQHandler
-                0x08000254                HDMI_CEC_IRQHandler
-                0x08000254                DMA1_Stream6_IRQHandler
-                0x08000254                DMA1_Stream1_IRQHandler
-                0x08000254                UART4_IRQHandler
-                0x08000254                TIM3_IRQHandler
-                0x08000254                RCC_IRQHandler
-                0x08000254                TIM8_BRK_TIM12_IRQHandler
-                0x08000254                Default_Handler
-                0x08000254                EXTI15_10_IRQHandler
-                0x08000254                ADC_IRQHandler
-                0x08000254                DMA1_Stream7_IRQHandler
-                0x08000254                TIM7_IRQHandler
-                0x08000254                CAN2_TX_IRQHandler
-                0x08000254                TIM5_IRQHandler
-                0x08000254                DMA2_Stream7_IRQHandler
-                0x08000254                I2C3_EV_IRQHandler
-                0x08000254                EXTI9_5_IRQHandler
-                0x08000254                RTC_WKUP_IRQHandler
-                0x08000254                SPI2_IRQHandler
-                0x08000254                OTG_HS_EP1_IN_IRQHandler
-                0x08000254                MemManage_Handler
-                0x08000254                DMA1_Stream0_IRQHandler
-                0x08000254                CAN1_TX_IRQHandler
-                0x08000254                SVC_Handler
-                0x08000254                EXTI4_IRQHandler
-                0x08000254                OTG_HS_EP1_OUT_IRQHandler
-                0x08000254                WWDG_IRQHandler
-                0x08000254                TIM2_IRQHandler
-                0x08000254                OTG_FS_WKUP_IRQHandler
-                0x08000254                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08000254                OTG_HS_IRQHandler
-                0x08000254                EXTI1_IRQHandler
-                0x08000254                USART2_IRQHandler
-                0x08000254                I2C2_ER_IRQHandler
-                0x08000254                DMA2_Stream1_IRQHandler
-                0x08000254                CAN1_SCE_IRQHandler
-                0x08000254                FLASH_IRQHandler
-                0x08000254                DMA2_Stream4_IRQHandler
-                0x08000254                BusFault_Handler
-                0x08000254                USART1_IRQHandler
-                0x08000254                OTG_FS_IRQHandler
-                0x08000254                SPI3_IRQHandler
-                0x08000254                DMA1_Stream4_IRQHandler
-                0x08000254                I2C1_ER_IRQHandler
-                0x08000254                FMC_IRQHandler
-                0x08000254                DMA2_Stream6_IRQHandler
-                0x08000254                SAI1_IRQHandler
-                0x08000254                DMA1_Stream3_IRQHandler
- .text.main     0x08000256        0x6 ./src/main.o
-                0x08000256                main
+                0x08000260        0x2 ./startup/startup_stm32.o
+                0x08000260                RTC_Alarm_IRQHandler
+                0x08000260                EXTI2_IRQHandler
+                0x08000260                TIM8_CC_IRQHandler
+                0x08000260                SPDIF_Rx_IRQHandler
+                0x08000260                DebugMon_Handler
+                0x08000260                SPI4_IRQHandler
+                0x08000260                TIM1_CC_IRQHandler
+                0x08000260                QuadSPI_IRQHandler
+                0x08000260                DMA2_Stream5_IRQHandler
+                0x08000260                HardFault_Handler
+                0x08000260                DMA1_Stream5_IRQHandler
+                0x08000260                PVD_IRQHandler
+                0x08000260                SDIO_IRQHandler
+                0x08000260                TAMP_STAMP_IRQHandler
+                0x08000260                NMI_Handler
+                0x08000260                CAN2_RX1_IRQHandler
+                0x08000260                EXTI3_IRQHandler
+                0x08000260                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000260                TIM1_UP_TIM10_IRQHandler
+                0x08000260                FMPI2C1_error_IRQHandler
+                0x08000260                TIM8_UP_TIM13_IRQHandler
+                0x08000260                I2C3_ER_IRQHandler
+                0x08000260                EXTI0_IRQHandler
+                0x08000260                I2C2_EV_IRQHandler
+                0x08000260                DMA1_Stream2_IRQHandler
+                0x08000260                CAN1_RX0_IRQHandler
+                0x08000260                FPU_IRQHandler
+                0x08000260                OTG_HS_WKUP_IRQHandler
+                0x08000260                UsageFault_Handler
+                0x08000260                CAN2_SCE_IRQHandler
+                0x08000260                DMA2_Stream2_IRQHandler
+                0x08000260                SPI1_IRQHandler
+                0x08000260                TIM6_DAC_IRQHandler
+                0x08000260                TIM1_BRK_TIM9_IRQHandler
+                0x08000260                DCMI_IRQHandler
+                0x08000260                CAN2_RX0_IRQHandler
+                0x08000260                DMA2_Stream3_IRQHandler
+                0x08000260                FMPI2C1_IRQHandler
+                0x08000260                SAI2_IRQHandler
+                0x08000260                USART6_IRQHandler
+                0x08000260                USART3_IRQHandler
+                0x08000260                CAN1_RX1_IRQHandler
+                0x08000260                UART5_IRQHandler
+                0x08000260                DMA2_Stream0_IRQHandler
+                0x08000260                TIM4_IRQHandler
+                0x08000260                I2C1_EV_IRQHandler
+                0x08000260                HDMI_CEC_IRQHandler
+                0x08000260                DMA1_Stream6_IRQHandler
+                0x08000260                DMA1_Stream1_IRQHandler
+                0x08000260                UART4_IRQHandler
+                0x08000260                TIM3_IRQHandler
+                0x08000260                RCC_IRQHandler
+                0x08000260                TIM8_BRK_TIM12_IRQHandler
+                0x08000260                Default_Handler
+                0x08000260                EXTI15_10_IRQHandler
+                0x08000260                ADC_IRQHandler
+                0x08000260                DMA1_Stream7_IRQHandler
+                0x08000260                TIM7_IRQHandler
+                0x08000260                CAN2_TX_IRQHandler
+                0x08000260                TIM5_IRQHandler
+                0x08000260                DMA2_Stream7_IRQHandler
+                0x08000260                I2C3_EV_IRQHandler
+                0x08000260                EXTI9_5_IRQHandler
+                0x08000260                RTC_WKUP_IRQHandler
+                0x08000260                SPI2_IRQHandler
+                0x08000260                OTG_HS_EP1_IN_IRQHandler
+                0x08000260                MemManage_Handler
+                0x08000260                DMA1_Stream0_IRQHandler
+                0x08000260                CAN1_TX_IRQHandler
+                0x08000260                EXTI4_IRQHandler
+                0x08000260                OTG_HS_EP1_OUT_IRQHandler
+                0x08000260                WWDG_IRQHandler
+                0x08000260                TIM2_IRQHandler
+                0x08000260                OTG_FS_WKUP_IRQHandler
+                0x08000260                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000260                OTG_HS_IRQHandler
+                0x08000260                EXTI1_IRQHandler
+                0x08000260                USART2_IRQHandler
+                0x08000260                I2C2_ER_IRQHandler
+                0x08000260                DMA2_Stream1_IRQHandler
+                0x08000260                CAN1_SCE_IRQHandler
+                0x08000260                FLASH_IRQHandler
+                0x08000260                DMA2_Stream4_IRQHandler
+                0x08000260                BusFault_Handler
+                0x08000260                USART1_IRQHandler
+                0x08000260                OTG_FS_IRQHandler
+                0x08000260                SPI3_IRQHandler
+                0x08000260                DMA1_Stream4_IRQHandler
+                0x08000260                I2C1_ER_IRQHandler
+                0x08000260                FMC_IRQHandler
+                0x08000260                DMA2_Stream6_IRQHandler
+                0x08000260                SAI1_IRQHandler
+                0x08000260                DMA1_Stream3_IRQHandler
+ .text.main     0x08000262        0x6 ./src/main.o
+                0x08000262                main
  .text.SystemInit
-                0x0800025c       0x6c ./src/system_stm32f4xx.o
-                0x0800025c                SystemInit
+                0x08000268       0x6c ./src/system_stm32f4xx.o
+                0x08000268                SystemInit
  .text.SetSysClock
-                0x080002c8      0x12c ./src/system_stm32f4xx.o
+                0x080002d4      0x12c ./src/system_stm32f4xx.o
+ .text.SVC_Handler
+                0x08000400       0x28 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+                0x08000400                SVC_Handler
+ *fill*         0x08000428        0x8 
+ .text.PendSV_Handler
+                0x08000430       0x68 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+                0x08000430                PendSV_Handler
+ .text.SysTick_Handler
+                0x08000498       0x44 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+                0x08000498                SysTick_Handler
+ .text.vListInsertEnd
+                0x080004dc       0x48 ./Third_party/FreeRTOS/org/Source/list.o
+                0x080004dc                vListInsertEnd
+ .text.uxListRemove
+                0x08000524       0x54 ./Third_party/FreeRTOS/org/Source/list.o
+                0x08000524                uxListRemove
+ .text.xTaskIncrementTick
+                0x08000578      0x170 ./Third_party/FreeRTOS/org/Source/tasks.o
+                0x08000578                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x080006e8       0xb8 ./Third_party/FreeRTOS/org/Source/tasks.o
+                0x080006e8                vTaskSwitchContext
+ .text.prvResetNextTaskUnblockTime
+                0x080007a0       0x38 ./Third_party/FreeRTOS/org/Source/tasks.o
  .text.__libc_init_array
-                0x080003f4       0x48 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
-                0x080003f4                __libc_init_array
+                0x080007d8       0x48 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+                0x080007d8                __libc_init_array
  .text.startup.register_fini
-                0x0800043c       0x14 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x08000450        0xc f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
-                0x08000450                atexit
+                0x08000820       0x14 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08000834        0xc f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+                0x08000834                atexit
  .text.__libc_fini_array
-                0x0800045c       0x2c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
-                0x0800045c                __libc_fini_array
+                0x08000840       0x2c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+                0x08000840                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x08000488        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
-                0x08000488                __retarget_lock_acquire_recursive
+                0x0800086c        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x0800086c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0800048c        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
-                0x0800048c                __retarget_lock_release_recursive
+                0x08000870        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x08000870                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x08000490       0x8c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
-                0x08000490                __register_exitproc
+                0x08000874       0x8c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+                0x08000874                __register_exitproc
  *(.glue_7)
- .glue_7        0x0800051c        0x0 linker stubs
+ .glue_7        0x08000900        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800051c        0x0 linker stubs
+ .glue_7t       0x08000900        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800051c        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x08000900        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0800051c        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0800051c                _init
- .init          0x08000520        0x8 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x08000900        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x08000900                _init
+ .init          0x08000904        0x8 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x08000528        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x08000528                _fini
- .fini          0x0800052c        0x8 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x08000534                . = ALIGN (0x4)
-                0x08000534                _etext = .
+ .fini          0x0800090c        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800090c                _fini
+ .fini          0x08000910        0x8 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x08000918                . = ALIGN (0x4)
+                0x08000918                _etext = .
 
-.vfp11_veneer   0x08000534        0x0
- .vfp11_veneer  0x08000534        0x0 linker stubs
+.vfp11_veneer   0x08000918        0x0
+ .vfp11_veneer  0x08000918        0x0 linker stubs
 
-.v4_bx          0x08000534        0x0
- .v4_bx         0x08000534        0x0 linker stubs
+.v4_bx          0x08000918        0x0
+ .v4_bx         0x08000918        0x0 linker stubs
 
-.iplt           0x08000534        0x0
- .iplt          0x08000534        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x08000918        0x0
+ .iplt          0x08000918        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x08000534        0x4
-                0x08000534                . = ALIGN (0x4)
+.rodata         0x08000918        0x4
+                0x08000918                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata._global_impure_ptr
-                0x08000534        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
-                0x08000534                _global_impure_ptr
-                0x08000538                . = ALIGN (0x4)
+                0x08000918        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+                0x08000918                _global_impure_ptr
+                0x0800091c                . = ALIGN (0x4)
 
-.rel.dyn        0x08000538        0x0
- .rel.iplt      0x08000538        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0800091c        0x0
+ .rel.iplt      0x0800091c        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.ARM.extab      0x08000538        0x0
-                0x08000538                . = ALIGN (0x4)
+.ARM.extab      0x0800091c        0x0
+                0x0800091c                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08000538                . = ALIGN (0x4)
+                0x0800091c                . = ALIGN (0x4)
 
-.ARM            0x08000538        0x0
-                0x08000538                . = ALIGN (0x4)
-                0x08000538                __exidx_start = .
+.ARM            0x0800091c        0x0
+                0x0800091c                . = ALIGN (0x4)
+                0x0800091c                __exidx_start = .
  *(.ARM.exidx*)
-                0x08000538                __exidx_end = .
-                0x08000538                . = ALIGN (0x4)
+                0x0800091c                __exidx_end = .
+                0x0800091c                . = ALIGN (0x4)
 
-.preinit_array  0x08000538        0x0
-                0x08000538                . = ALIGN (0x4)
-                0x08000538                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800091c        0x0
+                0x0800091c                . = ALIGN (0x4)
+                0x0800091c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08000538                PROVIDE (__preinit_array_end = .)
-                0x08000538                . = ALIGN (0x4)
+                0x0800091c                PROVIDE (__preinit_array_end = .)
+                0x0800091c                . = ALIGN (0x4)
 
-.init_array     0x08000538        0x8
-                0x08000538                . = ALIGN (0x4)
-                0x08000538                PROVIDE (__init_array_start = .)
+.init_array     0x0800091c        0x8
+                0x0800091c                . = ALIGN (0x4)
+                0x0800091c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x08000538        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+                0x0800091c        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0800053c        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08000540                PROVIDE (__init_array_end = .)
-                0x08000540                . = ALIGN (0x4)
+ .init_array    0x08000920        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08000924                PROVIDE (__init_array_end = .)
+                0x08000924                . = ALIGN (0x4)
 
-.fini_array     0x08000540        0x4
-                0x08000540                . = ALIGN (0x4)
-                0x08000540                PROVIDE (__fini_array_start = .)
+.fini_array     0x08000924        0x4
+                0x08000924                . = ALIGN (0x4)
+                0x08000924                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08000540        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x08000544                PROVIDE (__fini_array_end = .)
-                0x08000544                . = ALIGN (0x4)
-                0x08000544                _sidata = LOADADDR (.data)
+ .fini_array    0x08000924        0x4 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x08000928                PROVIDE (__fini_array_end = .)
+                0x08000928                . = ALIGN (0x4)
+                0x08000928                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x42c load address 0x08000544
+.data           0x20000000      0x42c load address 0x08000928
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2600,42 +3075,43 @@ LOAD f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.
                 0x2000042c                . = ALIGN (0x4)
                 0x2000042c                _edata = .
 
-.igot.plt       0x2000042c        0x0 load address 0x08000970
+.igot.plt       0x2000042c        0x0 load address 0x08000d54
  .igot.plt      0x2000042c        0x0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x2000042c                . = ALIGN (0x4)
 
-.bss            0x2000042c       0x40 load address 0x08000970
+.bss            0x2000042c      0x144 load address 0x08000d54
                 0x2000042c                _sbss = .
                 0x2000042c                __bss_start__ = _sbss
  *(.bss)
  .bss           0x2000042c       0x1c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .bss           0x20000448      0x104 ./Third_party/FreeRTOS/org/Source/tasks.o
+                0x20000448                pxCurrentTCB
  *(.bss*)
  *(COMMON)
- COMMON         0x20000448       0x21 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
-                0x20000448                __lock___atexit_recursive_mutex
-                0x2000044c                __lock___arc4random_mutex
-                0x20000450                __lock___env_recursive_mutex
-                0x20000454                __lock___sinit_recursive_mutex
-                0x20000458                __lock___malloc_recursive_mutex
-                0x2000045c                __lock___at_quick_exit_mutex
-                0x20000460                __lock___dd_hash_mutex
-                0x20000464                __lock___tz_mutex
-                0x20000468                __lock___sfp_recursive_mutex
-                0x2000046c                . = ALIGN (0x4)
- *fill*         0x20000469        0x3 
-                0x2000046c                _ebss = .
-                0x2000046c                __bss_end__ = _ebss
+ COMMON         0x2000054c       0x21 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x2000054c                __lock___atexit_recursive_mutex
+                0x20000550                __lock___arc4random_mutex
+                0x20000554                __lock___env_recursive_mutex
+                0x20000558                __lock___sinit_recursive_mutex
+                0x2000055c                __lock___malloc_recursive_mutex
+                0x20000560                __lock___at_quick_exit_mutex
+                0x20000564                __lock___dd_hash_mutex
+                0x20000568                __lock___tz_mutex
+                0x2000056c                __lock___sfp_recursive_mutex
+                0x20000570                . = ALIGN (0x4)
+ *fill*         0x2000056d        0x3 
+                0x20000570                _ebss = .
+                0x20000570                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x2000046c      0x404 load address 0x08000970
-                0x20000470                . = ALIGN (0x8)
- *fill*         0x2000046c        0x4 
-                0x20000470                PROVIDE (end = .)
+                0x20000570      0x400 load address 0x08000d54
+                0x20000570                . = ALIGN (0x8)
+                0x20000570                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
-                0x20000470                . = (. + _Min_Heap_Size)
-                0x20000870                . = (. + _Min_Stack_Size)
- *fill*         0x20000470      0x400 
-                0x20000870                . = ALIGN (0x8)
+                0x20000570                . = (. + _Min_Heap_Size)
+                0x20000970                . = (. + _Min_Stack_Size)
+ *fill*         0x20000570      0x400 
+                0x20000970                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2656,73 +3132,109 @@ LOAD f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.
  .ARM.attributes
                 0x000000a7       0x34 ./src/system_stm32f4xx.o
  .ARM.attributes
-                0x000000db       0x32 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
+                0x000000db       0x34 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
  .ARM.attributes
-                0x0000010d       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+                0x0000010f       0x34 ./Third_party/FreeRTOS/org/Source/list.o
  .ARM.attributes
-                0x00000141       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+                0x00000143       0x34 ./Third_party/FreeRTOS/org/Source/tasks.o
  .ARM.attributes
-                0x00000175       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+                0x00000177       0x32 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x000001a9       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+                0x000001a9       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
  .ARM.attributes
-                0x000001dd       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+                0x000001dd       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x00000211       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+                0x00000211       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000245       0x1e f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x00000245       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000279       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .ARM.attributes
+                0x000002ad       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x000002e1       0x1e f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtn.o
 OUTPUT(HelloWorld.elf elf32-littlearm)
 LOAD linker stubs
 LOAD f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
 LOAD f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_line     0x00000000      0x2f4
+.debug_line     0x00000000     0x1f17
  .debug_line    0x00000000       0x7c ./startup/startup_stm32.o
  .debug_line    0x0000007c       0x46 ./src/main.o
  .debug_line    0x000000c2      0x232 ./src/system_stm32f4xx.o
+ .debug_line    0x000002f4      0x3fe ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_line    0x000006f2      0x165 ./Third_party/FreeRTOS/org/Source/list.o
+ .debug_line    0x00000857     0x16c0 ./Third_party/FreeRTOS/org/Source/tasks.o
 
-.debug_info     0x00000000       0xb9
+.debug_info     0x00000000      0xca0
  .debug_info    0x00000000       0x22 ./startup/startup_stm32.o
  .debug_info    0x00000022       0x38 ./src/main.o
  .debug_info    0x0000005a       0x5f ./src/system_stm32f4xx.o
+ .debug_info    0x000000b9      0x23b ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_info    0x000002f4       0x80 ./Third_party/FreeRTOS/org/Source/list.o
+ .debug_info    0x00000374      0x92c ./Third_party/FreeRTOS/org/Source/tasks.o
 
-.debug_abbrev   0x00000000       0x98
+.debug_abbrev   0x00000000      0x28f
  .debug_abbrev  0x00000000       0x12 ./startup/startup_stm32.o
  .debug_abbrev  0x00000012       0x2c ./src/main.o
  .debug_abbrev  0x0000003e       0x5a ./src/system_stm32f4xx.o
+ .debug_abbrev  0x00000098       0xd7 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_abbrev  0x0000016f       0x2c ./Third_party/FreeRTOS/org/Source/list.o
+ .debug_abbrev  0x0000019b       0xf4 ./Third_party/FreeRTOS/org/Source/tasks.o
 
-.debug_aranges  0x00000000       0x78
+.debug_aranges  0x00000000      0x330
  .debug_aranges
                 0x00000000       0x28 ./startup/startup_stm32.o
  .debug_aranges
                 0x00000028       0x20 ./src/main.o
  .debug_aranges
                 0x00000048       0x30 ./src/system_stm32f4xx.o
+ .debug_aranges
+                0x00000078       0x80 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_aranges
+                0x000000f8       0x40 ./Third_party/FreeRTOS/org/Source/list.o
+ .debug_aranges
+                0x00000138      0x1f8 ./Third_party/FreeRTOS/org/Source/tasks.o
 
-.debug_str      0x00000000      0x13e
+.debug_str      0x00000000      0x884
  .debug_str     0x00000000       0x58 ./startup/startup_stm32.o
  .debug_str     0x00000058       0x9f ./src/main.o
                                  0xce (size before relaxing)
  .debug_str     0x000000f7       0x47 ./src/system_stm32f4xx.o
                                 0x102 (size before relaxing)
+ .debug_str     0x0000013e      0x15c ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+                                0x217 (size before relaxing)
+ .debug_str     0x0000029a       0x76 ./Third_party/FreeRTOS/org/Source/list.o
+                                0x131 (size before relaxing)
+ .debug_str     0x00000310      0x574 ./Third_party/FreeRTOS/org/Source/tasks.o
+                                0x651 (size before relaxing)
 
-.debug_ranges   0x00000000       0x50
+.debug_ranges   0x00000000      0x2d8
  .debug_ranges  0x00000000       0x20 ./startup/startup_stm32.o
  .debug_ranges  0x00000020       0x10 ./src/main.o
  .debug_ranges  0x00000030       0x20 ./src/system_stm32f4xx.o
+ .debug_ranges  0x00000050       0x70 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_ranges  0x000000c0       0x30 ./Third_party/FreeRTOS/org/Source/list.o
+ .debug_ranges  0x000000f0      0x1e8 ./Third_party/FreeRTOS/org/Source/tasks.o
 
 .comment        0x00000000       0x4c
  .comment       0x00000000       0x4c ./src/main.o
                                  0x4d (size before relaxing)
  .comment       0x0000004c       0x4d ./src/system_stm32f4xx.o
+ .comment       0x0000004c       0x4d ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .comment       0x0000004c       0x4d ./Third_party/FreeRTOS/org/Source/list.o
+ .comment       0x0000004c       0x4d ./Third_party/FreeRTOS/org/Source/tasks.o
 
-.debug_frame    0x00000000      0x270
+.debug_frame    0x00000000      0xd84
  .debug_frame   0x00000000       0x28 ./src/main.o
  .debug_frame   0x00000028       0x7c ./src/system_stm32f4xx.o
- .debug_frame   0x000000a4       0x2c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
- .debug_frame   0x000000d0       0x68 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00000138       0x20 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
- .debug_frame   0x00000158       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
- .debug_frame   0x0000018c       0xb0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
- .debug_frame   0x0000023c       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x000000a4      0x1a8 ./Third_party/FreeRTOS/org/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_frame   0x0000024c       0xd8 ./Third_party/FreeRTOS/org/Source/list.o
+ .debug_frame   0x00000324      0x894 ./Third_party/FreeRTOS/org/Source/tasks.o
+ .debug_frame   0x00000bb8       0x2c f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-init.o)
+ .debug_frame   0x00000be4       0x68 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000c4c       0x20 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000c6c       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-fini.o)
+ .debug_frame   0x00000ca0       0xb0 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-lock.o)
+ .debug_frame   0x00000d50       0x34 f:/programming/baremetal/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(lib_a-__atexit.o)

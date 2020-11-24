@@ -83,4 +83,4 @@ Mastering Free RTOS using STM32F446RE
 
 - should have Arm compiler if not refer [here](https://www.youtube.com/watch?v=qWqlkCLmZoE) and download link is [here](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 
-[Markdown Cheat Sheet](markdown-cheat-sheet.md)
+- [Markdown Cheat Sheet](markdown-cheat-sheet.md)

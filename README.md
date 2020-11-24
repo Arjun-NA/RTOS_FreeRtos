@@ -34,7 +34,7 @@ Mastering Free RTOS using STM32F446RE
 6.		Right click on project -> select `properties` -> under `C/C++ Build` -> `Settings` ->
 		`MCU GCC Compiler` -> `Includes`		(See following image) 
 		add inc,config,CMSIS/core,CMSIS/device/,StdPeriph_Driver/inc  by selecting workspace and navigating it by yourself.
-	![NewPrjt3](./readme_imgs/NewPrjt3.PNG)
+	![NewPrjt3](./readme_imgs/NewPrjt3.png)
 7.	**Creating empty RTOS project with necessary files :**
 		Create folders as per following Tree
 

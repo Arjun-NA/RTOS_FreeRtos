@@ -14,10 +14,10 @@ Mastering Free RTOS using STM32F446RE
 
 ## 2. Create a New project in Workbench
 
-i. 		Create a WorkSpace and select the workspace as the stm32 workbench loads.
-ii.		Create a New project as per the following img
+1. 		Create a WorkSpace and select the workspace as the stm32 workbench loads.
+2.		Create a New project as per the following img
 		![New Project](./readme_imgs/New_prjt.PNG) 
-iii.	
+3.	
 
 ---
 ### Miscellaneous
